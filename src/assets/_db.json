@@ -1,0 +1,40 @@
+{
+  "members": [
+    {
+      "id": "190e",
+      "cin": "1247896",
+      "name": "saliiii",
+      "cv": "cv12",
+      "type": "hello",
+      "createdDate": "2024-09-30T13:11:46.838Z"
+    },
+    {
+      "id": "ec96",
+      "cin": "78899",
+      "name": "saliiiiiii",
+      "cv": "cvb",
+      "type": "rtt",
+      "createdDate": "2024-09-30T14:13:24.838Z"
+    },
+    {
+      "id": "1117",
+      "cin": "11445323232",
+      "name": "jezdkjdz",
+      "cv": "dsss",
+      "type": "ss",
+      "createdDate": "2024-10-14T13:49:08.053Z"
+    }
+  ],
+  "event": [
+    {
+      "id": "12258",
+      "titre": "event1",
+      "datedebut": "1258",
+      "datefin": "12/25/2000",
+      "lieu": "manzel chaker"
+    },
+    {
+      "id": "d876"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+
+<div fxLayout="row" fxLayoutAlign="end center" ><button (click)="open()">add new event</button></div>
+
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+ 
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="titre">
+      <th mat-header-cell *matHeaderCellDef> titre </th>
+      <td mat-cell *matCellDef="let element"> {{element.titre}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="datedebut">
+      <th mat-header-cell *matHeaderCellDef> datedebut </th>
+      <td mat-cell *matCellDef="let element"> {{element.datedebut }} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="datefin">
+      <th mat-header-cell *matHeaderCellDef> datefin</th>
+      <td mat-cell *matCellDef="let element"> {{element.datefin}} </td>
+    </ng-container>
+    <ng-container matColumnDef="lieu">
+      <th mat-header-cell *matHeaderCellDef> lieu</th>
+      <td mat-cell *matCellDef="let element"> {{element.lieu}} </td>
+    </ng-container>
+   
+    
+    <ng-container matColumnDef="icon">
+      <th mat-header-cell *matHeaderCellDef> icon</th>
+      <td mat-cell *matCellDef="let element"> <button > <mat-icon>edit</mat-icon> </button>
+       <button> <mat-icon>delete </mat-icon></button></td>
+   
+     
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

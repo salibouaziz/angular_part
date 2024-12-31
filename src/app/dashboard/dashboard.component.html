@@ -1,0 +1,49 @@
+
+<mat-card>
+
+    <mat-card-title>Members</mat-card-title>
+    <mat-card-subtitle>{{nb_members}}</mat-card-subtitle>
+    
+    
+    
+    
+    </mat-card>
+    <mat-card>
+    
+    <mat-card-title>Tools</mat-card-title>
+    <mat-card-subtitle>{{nb_tools}}</mat-card-subtitle>
+    
+    
+    
+    
+    </mat-card>
+    <mat-card>
+    
+    <mat-card-title>Events</mat-card-title>
+    <mat-card-subtitle>{{nb_events}}</mat-card-subtitle>
+    
+    
+    
+    
+    </mat-card>
+    <mat-card>
+    
+    <mat-card-title>articles</mat-card-title>
+    <mat-card-subtitle>{{nb_article}}</mat-card-subtitle>
+    
+    
+    
+    
+    </mat-card>
+    <div class="chart-wrapper">
+        <canvas baseChart
+                [type]="'pie'"
+          [datasets]="chartData"
+          [labels]="chartLabels"
+          [options]="chartOptions"
+          >
+        </canvas>
+      </div>
+      
+    
+    
